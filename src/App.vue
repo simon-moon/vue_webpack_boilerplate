@@ -8,7 +8,7 @@
       Welcome to New Schweser - a Vue.js app. 
     </p>
     <p>  
-      This is the Parent view Located in src/App.vue
+      This is the <b>{{ msg }}</b> view Located in src/App.vue
     </p>
     <!---Main View -->
     <router-view>
@@ -40,3 +40,13 @@
     height: 100px;
   }
 </style>
+
+<script>
+  export default {
+    data () {
+      return {
+        msg: 'Parent'
+      }
+    }
+  }
+</script>

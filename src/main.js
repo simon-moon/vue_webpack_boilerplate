@@ -11,3 +11,7 @@ var router = new VueRouter(RouterConfig)
 router.map(RouterMap)
 
 router.start(App, '#app')
+
+router.afterEach(function (transition) {
+  console.log('Successfully navigated to: ' + transition.to.path)
+})

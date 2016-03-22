@@ -12,6 +12,18 @@ export default {
   '/test': {
     component: function (resolve) {
       require(['./components/Test'], resolve)
+    },
+    subRoutes: {
+      '/foo': {
+        component: function (resolve) {
+          require(['./components/Foo'], resolve)
+        }
+      },
+      '/bar': {
+        component: function (resolve) {
+          require(['./components/Bar'], resolve)
+        }
+      }
     }
   }
 }

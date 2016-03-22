@@ -14,6 +14,10 @@ npm run dev
 # build for production with minification
 npm run build
 
+# view production build at localhost:8080
+cd dist
+http-server ./
+
 # run unit tests
 npm run unit
 
@@ -24,4 +28,11 @@ npm run e2e
 npm test
 ```
 
-For detailed explanation on how things work, checkout the [guide](https://github.com/vuejs-templates/webpack#vue-webpack-boilerplate) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# Related Docs:
+[Vue.js](http://vuejs.org/guide/)
+[Webpack](https://webpack.github.io/docs/what-is-webpack.html)
+[Vue-Router](http://vuejs.github.io/vue-router/en/index.html)
+[Vue-Webpack](https://github.com/vuejs-templates/webpack)
+[Vue-Loader](http://vuejs.github.io/vue-loader)
+#Dev Tools:
+[http-server](https://github.com/indexzero/http-server)

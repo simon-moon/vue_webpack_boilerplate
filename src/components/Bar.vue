@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
   	<span>
-  	  This is the <b>{{ msg }}</b> component located at src/components/Home.vue 
+  	  This is the nested <b>{{ msg }}</b> component located at src/components/Bar.vue 
     </span>
   </div>
 </template>
@@ -10,7 +10,7 @@
 export default {
   data () {
     return {
-      msg: 'Home'
+      msg: 'Bar'
     }
   }
 }
