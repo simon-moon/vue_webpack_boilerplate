@@ -7,7 +7,7 @@ module.exports = {
     .url('http://localhost:8080')
       .waitForElementVisible('#app', 5000)
       .assert.elementPresent('.logo')
-      .assert.containsText('h1', 'Hello World!')
+      .assert.elementCount('span', 1)
       .assert.elementCount('p', 3)
       .end()
   }

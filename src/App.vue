@@ -2,7 +2,7 @@
   <div id="app">
     <img class="logo" src="./assets/K_logo.png">
     <p>
-      <a href="/home">Home</a> - <a href="/test" >Test</a> 
+      <a v-link="{ path: '/home' }">Home</a> - <a v-link="{ path: '/test' }" >Test</a> 
     </p> 
     <p>
       Welcome to New Schweser - a Vue.js app. 
