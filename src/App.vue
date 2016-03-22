@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="wrapper">
     <img class="logo" src="./assets/K_logo.png">
     <p>
       <a v-link="{ path: '/home' }">Home</a> - <a v-link="{ path: '/test' }" >Test</a> 
@@ -28,7 +28,7 @@
     height: 100%;
   }
 
-  #app {
+  #wrapper {
     margin-top: -100px;
     max-width: 600px;
     font-family: Helvetica, sans-serif;

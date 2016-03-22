@@ -1,41 +1,13 @@
 import Vue from 'vue'
 import App from './App'
 import VueRouter from 'vue-router'
-
-// Bind App (src/App.vue) to <app> element on index.html to create base view
-/* eslint-disable no-new */
-new Vue({
-  el: 'body',
-  components: { App }
-})
+import RouterMap from './routemap'
+import RouterConfig from './routecfg'
 
 Vue.use(VueRouter)
 
-var router = new VueRouter({
-  hashbang: false,
-  history: true,
-  mode: 'html5',
-  linkActiveClass: 'active',
-  saveScrollPosition: true,
-  transitionOnLoad: true
-})
+var router = new VueRouter(RouterConfig)
 
-router.map({
-  '/': {
-    component: function (resolve) {
-      require(['./components/Home'], resolve)
-    }
-  },
-  '/home': {
-    component: function (resolve) {
-      require(['./components/Home'], resolve)
-    }
-  },
-  '/test': {
-    component: function (resolve) {
-      require(['./components/Test'], resolve)
-    }
-  }
-})
+router.map(RouterMap)
 
 router.start(App, '#app')
