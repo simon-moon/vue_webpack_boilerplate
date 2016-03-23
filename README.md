@@ -14,11 +14,6 @@ npm run dev
 # build for production with minification
 npm run build
 
-# (optional -  this will be unneeded when merged to vagrant)
-# view production build at localhost:8080
-cd dist
-http-server ./
-
 # run unit tests
 npm run unit
 
@@ -42,5 +37,4 @@ npm test
 [Jasmine JS Testing](http://jasmine.github.io/2.4/introduction.html) - 
 [Nightwatch e2e Testing](http://nightwatchjs.org/) - 
 [Babel JS Compiler](https://babeljs.io/) - 
-[ESLint JS Linter](http://eslint.org/) - 
-[http-server](https://github.com/indexzero/http-server) -  
+[ESLint JS Linter](http://eslint.org/) -
