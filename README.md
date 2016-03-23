@@ -14,6 +14,7 @@ npm run dev
 # build for production with minification
 npm run build
 
+# (optional -  this will be unneeded when merged to vagrant)
 # view production build at localhost:8080
 cd dist
 http-server ./
