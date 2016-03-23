@@ -1,9 +1,13 @@
 <template>
-  <div class="hello">
-    <span>
-      This is the <b>{{ msg }}</b> component located at src/components/Test.vue 
-    </span>
-    <div>
+  <div class="row">
+    <div class="col-md-12">
+      <span>
+        This is the <b>{{ msg }}</b> component located at src/components/Home.vue 
+      </span>
+    </div>  
+  </div>
+  <div class="row">
+    <div class="col-md-12">
       <p>
         Click Here for nested route: <a v-link="{ path: '/test/foo' }">Foo</a> -or - <a v-link="{ path: '/test/bar' }">Bar</a>
       </p>

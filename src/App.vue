@@ -1,44 +1,60 @@
 <template>
-  <div id="wrapper">
-    <img class="logo" src="./assets/K_logo.png">
-    <p>
-      <a v-link="{ path: '/home' }">Home</a> - <a v-link="{ path: '/test' }" >Test</a> 
-    </p> 
-    <p>
-      Welcome to New Schweser - a Vue.js app. 
-    </p>
-    <p>  
-      This is the <b>{{ msg }}</b> view Located in src/App.vue
-    </p>
-    <!---Main View -->
-    <router-view>
-    </router-view>
+  <div class="container">
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-md-12">
+          <img class="logo img-responsive" src="./assets/K_logo.png">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            <a v-link="{ path: '/home' }" class="btn btn-primary">Home</a> 
+            <a v-link="{ path: '/test' }" class="btn btn-success" >Test</a> 
+          </p>
+        </div>
+      </div>
+      <div clas="row">
+        <div class="col-md-12">  
+          <h3>
+            Welcome to New Schweser - a Vue.js app. 
+          </h3>
+        </div>
+      </div>  
+      <div class="row"> 
+        <div class="col-md-12">  
+          <p>  
+            This is the <b>{{ msg }}</b> view Located in src/App.vue
+          </p>
+        </div>
+      </div>    
+
+        <!---Main View -->
+      <div class="row">
+        <div class="col-md-12"> 
+          <router-view>
+          </router-view>
+        </div>
+      </div>
+
+    </div>
   </div>
 </template>
 
-<style>
-  html {
-    height: 100%;
-  }
+<style lang='scss'>
+$icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
+@import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap';
 
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
+.jumbotron {
+  margin-top: 10%;
+  text-align: center;
+}
 
-  #wrapper {
-    margin-top: -100px;
-    max-width: 600px;
-    font-family: Helvetica, sans-serif;
-    text-align: center;
-  }
-
-  .logo {
-    width: 100px;
-    height: 100px;
-  }
+.img-responsive{
+  margin: 0 auto 20px;
+  height: 100px;
+  width: 100px;
+}
 </style>
 
 <script>
