@@ -1,6 +1,6 @@
-# new_schweser
+# KPE Vue.js Application Framework
 
-> Schweser as Vue.js App
+> Demo: Kaplanfinancial.com as Vue.js App
 
 ## Build Setup
 
