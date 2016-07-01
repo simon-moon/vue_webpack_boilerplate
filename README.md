@@ -1,6 +1,6 @@
-# KPE Vue.js Application Framework
+# Vue.js Application Framework
 
-> Demo: Kaplanfinancial.com as Vue.js App
+> A scalable boilerplate for large applications in Vue.js.  Using Webpack with Babel 6, Hot-Reload, and ESLint on-save; Test suite with Karma/Mocha/Jasmine featuring e2e testing via Nightwatch and in-browser testing with PhantomJS.  Includes Bootstrap-sass (Bootstrap3.  Also integrated with the Contentful CMS SDK for rapid prototyping. 
 
 ## Build Setup
 
