@@ -35,9 +35,10 @@ heroku git:remote -a vue-deploy-example
 [Vue-Router](http://vuejs.github.io/vue-router/en/index.html) - 
 [Vue-Loader](http://vuejs.github.io/vue-loader) - 
 [Bootstrap-Sass](https://github.com/twbs/bootstrap-sass) - 
-[Bootstrap](http://bootstrapdocs.com/v3.0.3/docs/css/)
-[Contentful CMS](https://www.contentful.com/developers/docs/)
-[Heroku](https://devcenter.heroku.com/)
+[Bootstrap](http://bootstrapdocs.com/v3.0.3/docs/css/) -
+[Contentful CMS](https://www.contentful.com/developers/docs/) -
+[Heroku](https://devcenter.heroku.com/) -
+[Heroku Webpack Deploy](https://medium.com/@sagarjauhari/quick-n-clean-way-to-deploy-vue-webpack-apps-on-heroku-b522d3904bc8#.3b2k5ie0k)
 
 #Dev Tools:
 [KarmaJS Test Runner](https://karma-runner.github.io/0.13/index.html) - 
