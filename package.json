@@ -1,9 +1,12 @@
 {
   "name": "vue-boilerplate",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Application Framework for Vue.js apps at scale",
   "author": "Simon Moon",
   "private": true,
+  "engines": {
+    "node": "6.0.0"
+  }
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "rimraf dist && mkdirp dist && ncp static dist/static && cross-env NODE_ENV=production webpack --progress --hide-modules --config build/webpack.prod.conf.js",
