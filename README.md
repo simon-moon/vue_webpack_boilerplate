@@ -28,7 +28,6 @@ npm test
 [Vue.js](http://vuejs.org/guide/) - 
 [Webpack](https://webpack.github.io/docs/what-is-webpack.html) - 
 [Vue-Router](http://vuejs.github.io/vue-router/en/index.html) - 
-[Vue-Webpack](https://github.com/vuejs-templates/webpack) - 
 [Vue-Loader](http://vuejs.github.io/vue-loader) - 
 [Bootstrap-Sass](https://github.com/twbs/bootstrap-sass) - 
 [Bootstrap](http://bootstrapdocs.com/v3.0.3/docs/css/)

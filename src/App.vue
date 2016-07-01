@@ -3,7 +3,7 @@
     <div class="jumbotron">
       <div class="row">
         <div class="col-md-12">
-          <img class="logo img-responsive" src="./assets/K_logo.png">
+          <img class="logo img-responsive" src="/static/assets/images/vuejs.png">
         </div>
       </div>
       <div class="row">
@@ -17,7 +17,7 @@
       <div clas="row">
         <div class="col-md-12">  
           <h3>
-            Welcome to New Schweser - a Vue.js app. 
+            Welcome to Vue 
           </h3>
         </div>
       </div>  
@@ -52,8 +52,8 @@ $icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
 
 .img-responsive{
   margin: 0 auto 20px;
-  height: 100px;
-  width: 100px;
+  height: auto;
+  width: 500px;
 }
 </style>
 
