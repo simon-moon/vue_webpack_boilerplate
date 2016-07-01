@@ -42,7 +42,7 @@ npm run deploy
 [KarmaJS](https://karma-runner.github.io/0.13/index.html) - 
 [MochaJS](https://mochajs.org/) - 
 [JasmineJS](http://jasmine.github.io/2.4/introduction.html) - 
-[Nightwatch e2e Testing](http://nightwatchjs.org/) - 
-[PhantomJS Browser Testing](http://phantomjs.org/) - 
-[BabelJS Compiler](https://babeljs.io/) - 
-[ESLint JSLinter](http://eslint.org/) -
+[Nightwatch](http://nightwatchjs.org/) - 
+[PhantomJS](http://phantomjs.org/) - 
+[BabelJS](https://babeljs.io/) - 
+[ESLint](http://eslint.org/) -
