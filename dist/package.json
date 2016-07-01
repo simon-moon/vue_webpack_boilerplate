@@ -1,0 +1,10 @@
+{
+ "name": "vue-boilerplate-distribution",
+ "version": "1.0.0",
+ "description": "Vue App Distribution",
+ "author": "Simon Moon",
+ "private": true,
+ "scripts": {
+   "postinstall": "npm install express"
+ }
+}
