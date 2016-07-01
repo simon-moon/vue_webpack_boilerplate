@@ -12,7 +12,8 @@
     "build": "rm dist/index.html && rimraf dist/static && mkdirp dist/static && ncp static dist/static && cross-env NODE_ENV=production webpack --progress --hide-modules --config build/webpack.prod.conf.js",
     "unit": "karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
-    "test": "npm run unit && npm run e2e"
+    "test": "npm run unit && npm run e2e",
+    "deploy": "git subtree push — prefix dist heroku master"
   },
   "dependencies": {
     "bootstrap-sass": "^3.3.6",
