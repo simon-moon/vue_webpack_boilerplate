@@ -1,6 +1,6 @@
 # Vue.js Application Framework
 
-> A scalable boilerplate for large applications in Vue.js bundles with vue-router and vue-loader for Webpack.  Includes Babel 6 transpiler for es6, Hot-Reload, and ESlint on-save; Test suite with Karma/Mocha/Jasmine featuring e2e testing via Nightwatch and in-browser testing with PhantomJS; bootstrap-sass (Bootstrap 3) CSS framework.  Also integrated with the Contentful CMS SDK for rapid prototyping via cloud CMS.  Includes a development server in Express.js. 
+> A scalable boilerplate for large applications in Vue.js bundles with vue-router and vue-loader for Webpack.  Includes Babel 6 transpiler for es6, Hot-Reload, and ESlint on-save; Test suite with Karma/Mocha/Jasmine featuring e2e testing via Nightwatch and in-browser testing with PhantomJS; bootstrap-sass (Bootstrap 3) CSS framework.  Also integrated with the Contentful CMS SDK for rapid prototyping via cloud CMS.  Includes a development server in Express.js and Distribution Server for Heroku. 
 
 ## Build Setup
 
@@ -8,11 +8,8 @@
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# serve from Express server with hot reload at localhost:8080
 npm run dev
-
-# build for production with minification
-npm run build
 
 # run unit tests
 npm run unit
@@ -22,6 +19,14 @@ npm run e2e
 
 # run all tests
 npm test
+
+# build for production with minification
+npm run build
+
+#deploy to heroku
+cd dist
+heroku git:remote -a vue-deploy-example
+
 ```
 
 # Related Docs:
@@ -32,6 +37,7 @@ npm test
 [Bootstrap-Sass](https://github.com/twbs/bootstrap-sass) - 
 [Bootstrap](http://bootstrapdocs.com/v3.0.3/docs/css/)
 [Contentful CMS](https://www.contentful.com/developers/docs/)
+[Heroku](https://devcenter.heroku.com/)
 
 #Dev Tools:
 [KarmaJS Test Runner](https://karma-runner.github.io/0.13/index.html) - 
