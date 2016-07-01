@@ -1,6 +1,6 @@
 # Vue.js Application Framework
 
-> A scalable boilerplate for large applications in Vue.js.  Using Webpack with Babel 6, Hot-Reload, and ESLint on-save; Test suite with Karma/Mocha/Jasmine featuring e2e testing via Nightwatch and in-browser testing with PhantomJS.  Includes Bootstrap-sass (Bootstrap3.  Also integrated with the Contentful CMS SDK for rapid prototyping. 
+> A scalable boilerplate for large applications in Vue.js bundles with vue-router and vue-loader for Webpack.  Includes Babel 6 transpiler for es6, Hot-Reload, and ESlint on-save; Test suite with Karma/Mocha/Jasmine featuring e2e testing via Nightwatch and in-browser testing with PhantomJS; bootstrap-sass (Bootstrap 3) CSS framework.  Also integrated with the Contentful CMS SDK for rapid prototyping via cloud CMS.  Includes a development server in Express.js. 
 
 ## Build Setup
 
@@ -31,6 +31,7 @@ npm test
 [Vue-Loader](http://vuejs.github.io/vue-loader) - 
 [Bootstrap-Sass](https://github.com/twbs/bootstrap-sass) - 
 [Bootstrap](http://bootstrapdocs.com/v3.0.3/docs/css/)
+[Contentful CMS](https://www.contentful.com/developers/docs/)
 
 #Dev Tools:
 [KarmaJS Test Runner](https://karma-runner.github.io/0.13/index.html) - 
