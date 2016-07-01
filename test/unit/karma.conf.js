@@ -1,15 +1,9 @@
-// This is a karma config file. For more details see
-//   http://karma-runner.github.io/0.13/config/configuration-file.html
-// we are also using it with karma-webpack
-//   https://github.com/webpack/karma-webpack
-
 var path = require('path')
 var merge = require('webpack-merge')
 var baseConfig = require('../../build/webpack.base.conf')
 var projectRoot = path.resolve(__dirname, '../../')
 
 var webpackConfig = merge(baseConfig, {
-  // use inline sourcemap for karma-sourcemap-loader
   devtool: '#inline-source-map',
   vue: {
     loaders: {
@@ -18,10 +12,8 @@ var webpackConfig = merge(baseConfig, {
   }
 })
 
-// no need for app entry during tests
 delete webpackConfig.entry
 
-// make sure isparta loader is applied before eslint
 webpackConfig.module.preLoaders.unshift({
   test: /\.js$/,
   loader: 'isparta',
@@ -29,7 +21,6 @@ webpackConfig.module.preLoaders.unshift({
   exclude: /test\/unit|node_modules/
 })
 
-// only apply babel for test files when using isparta
 webpackConfig.module.loaders.some(function (loader, i) {
   if (loader.loader === 'babel') {
     loader.include = /test\/unit/
@@ -39,10 +30,6 @@ webpackConfig.module.loaders.some(function (loader, i) {
 
 module.exports = function (config) {
   config.set({
-    // to run in additional browsers:
-    // 1. install corresponding karma launcher
-    //    http://karma-runner.github.io/0.13/config/browsers.html
-    // 2. add it to the `browsers` array below.
     browsers: ['PhantomJS'],
     frameworks: ['jasmine'],
     reporters: ['spec', 'coverage'],
