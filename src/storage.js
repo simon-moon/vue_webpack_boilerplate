@@ -14,7 +14,7 @@ const storage = new EventEmitter()
 export default storage
 
 storage.getEntry = (id, includeLevel, sortOrder, contentType) => {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     if (storageCache[id]) {
       resolve(storageCache[id])
     } else {
@@ -27,15 +27,8 @@ storage.getEntry = (id, includeLevel, sortOrder, contentType) => {
         }
         const result = storageCache[id] = returnEntry
         resolve(result)
-      }, reject)
+      })
+      .catch((reject) => console.log('Rejected:', reject))
     }
-  })
-}
-
-storage.getEntries = (ids, includeLevel) => {
-  const entries = ids.map(this.getEntry)
-  const results = new Promise.All(entries)
-  results.then(results => {
-    return results
   })
 }
