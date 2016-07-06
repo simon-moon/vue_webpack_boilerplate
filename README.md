@@ -1,6 +1,6 @@
-# Vue.js Application Framework
+# A Demo Application for Prezi built from my personal Vue.js Application Framework
 
-> A scalable boilerplate for large applications in Vue.js bundled with vue-router and vue-loader for Webpack.  Includes Babel 6 transpiler for es6, Hot-Reload, and ESlint on-save; Test suite with Karma/Mocha/Jasmine featuring e2e testing via Nightwatch and in-browser testing with PhantomJS; bootstrap-sass (Bootstrap 3) CSS framework included; Integrated with the Contentful CMS SDK for rapid prototyping via cloud CMS; Development server and simple Distribution Server for Heroku in Express.js. 
+> This is based on my private  boilerplate for large scaleable applications in Vue.js. Prebundled with vue-router and vue-loader for Webpack. It includes Babel 6 transpiler for es6, Hot-Reload, and ESlint on-save; Test suite with Karma/Mocha/Jasmine featuring e2e testing via Nightwatch and in-browser testing with PhantomJS; bootstrap-sass (Bootstrap 3) CSS framework included; Integrated with the Contentful CMS SDK for rapid prototyping via cloud CMS; Development server and simple Distribution Server for Heroku in Express.js. 
 
 ## Build Setup
 
@@ -24,6 +24,7 @@ npm test
 npm run build
 
 #deploy to heroku
+>If attempting to deploy to Heroku please follow instruction in the Dev center for setting up a new app.
 npm run deploy
 
 ```
