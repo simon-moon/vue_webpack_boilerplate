@@ -24,7 +24,7 @@ npm test
 npm run build
 
 #deploy to heroku
->If attempting to deploy to Heroku please follow instruction in the Dev center for setting up a new app.
+#If attempting to deploy to Heroku please follow instruction in the Dev center for setting up a new app.
 npm run deploy
 
 ```
