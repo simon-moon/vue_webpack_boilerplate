@@ -1,4 +1,4 @@
-import Contentful from 'contentful'
+import Contentful from 'contentful-management'
 import { EventEmitter } from 'events'
 import { Promise } from 'es6-promise'
 
