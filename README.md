@@ -1,5 +1,7 @@
 # A Demo Application for Prezi
 
+## App currently running [Heroku](https://preziapp.herokuapp.com/)
+
 > This application is based on my private  boilerplate for large scaleable applications in Vue.js. It comes bundled with vue-router and vue-loader for Webpack. Some features include: Babel 6 transpiler for es6; hot-reload; ESlint on-save; Test suite with Karma/Mocha/Jasmine featuring e2e testing via Nightwatch and in-browser testing with PhantomJS; bootstrap-sass (Bootstrap 3) CSS framewor; Integrated with the Contentful CMS SDK for rapid prototyping via cloud CMS; Express.js development server for local work and a simple distribution Server for Heroku. 
 
 ## Build Setup
