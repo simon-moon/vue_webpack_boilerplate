@@ -13,11 +13,11 @@
 
 > This application is based on my boilerplate for large scaleable applications in Vue.js. It comes bundled with vue-router and vue-loader for Webpack. Some features include: Babel 6 transpiler for es6; hot-reload; ESlint on-save; Test suite with Karma/Mocha/Jasmine featuring e2e testing via Nightwatch and in-browser testing with PhantomJS; bootstrap-sass (Bootstrap 3) CSS framewor; Integrated with the Contentful CMS SDK for rapid prototyping via cloud CMS; Express.js development server for local work and a simple distribution Server for Heroku. 
 
-## Checkout the APP
+## View the Live App
 
-> The app currently running on [Heroku](https://preziapp.herokuapp.com/).  If the drone is a sleep you may have to poke him to wake him up
+> The app currently running on [Heroku](https://preziapp.herokuapp.com/).  If the drone is asleep you may have to poke it a few times to wake it up
 
-> I have invited Emoke as a user in Contentful to view the "backend".  Pester her for access or pester me with your email and I will add you.
+> I have invited read-only users in Contentful to view the "backend".  Pester me with your email and I will add you.
 
 ## Development Setup
 
