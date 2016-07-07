@@ -1,6 +1,6 @@
 # A Demo Application for Prezi
 
-### About
+## About
 
 > The demo application I have prepared showcases some of my favorite tools and toys.  I enjoy writing pure JS applications that run on the client and consume APIs for fun and profit. To that end I put this demo together using a headless CMS called Contentful as a backend.  Contentful is an easy to use Cloud CMS that enables rapid prototyping. It has a data-first developer-centric approach and a robust API.  
 
@@ -22,7 +22,7 @@
 
 > I can invite read-only users into Contentful to view the "backend".  Pester me with your email and I will add you.
 
-## Development Setup
+### Development Setup
 
 ``` bash
 # install dependencies
@@ -40,7 +40,7 @@ npm run deploy
 
 ```
 
-# Related Docs:
+### Related Docs:
 [Vue.js](http://vuejs.org/guide/) - 
 [Webpack](https://webpack.github.io/docs/what-is-webpack.html) - 
 [Vue-Router](http://vuejs.github.io/vue-router/en/index.html) - 
