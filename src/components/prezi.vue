@@ -1,23 +1,40 @@
 <template>
+
+  <section class="title">
+    <div class="container">
+      <div class="row">
+        <div class="info col-md-12">
+          <p>A Prezi Demo</p>
+          <p>Lovingly Made by <a target="_blank" href="https://codepen.io/simonmoon/">Simon Moon</a>.</p>
+            <div class="col-md-12 text-center">
+              <p>Search Prezis By Author, Title or Date!</p>
+              <input v-model="search" class="form-control" placeholder="Start Typing">
+            </div>  
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="prezis">
     <div class="container">
-      <template v-for="prezi in prezis">
-        <div class="col-lg-4 col-md-4 col-sm-6">
-          <div class="card" data-id="{{ prezi.id }}">
+
+      <template v-for="prezi in prezis| filterBy search">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 moving-item">
+          <div class="card" data-id="{{ prezi.fields.data.id }}">
             <div class="image">
-              <img v-bind:src="prezi.thumbnail + '?image=' + randomImage()" alt="">
+              <img v-bind:src="prezi.fields.data.thumbnail + '?image=' + randomIndex()" alt="" onerror="if (this.src != 'moon.jpg') this.src = './static/assets/images/moon.jpg';">
 
               <div v-bind:class="[overlay, isEven($index) ? overlayBlue : overlayIndigo ]">
                 <div class="overlay-content">
                   <ul class="meta">
-                    <li><a href="#0"><i class="fa fa-tag"></i> Html5/Css3</a></li>
-                    <li><a href="#0"><i class="fa fa-clock-o"></i> {{ prezi.createdAt }} </a></li>
+                    <li><i class="fa fa-tag"></i> {{buzzWord()}}</li>
+                    <li><i class="fa fa-clock-o"></i> {{ prezi.fields.data.createdAt }} </li>
                   </ul>
 
-                  <a href="#0" class="title">{{ prezi.title }}</a>
+                  <a href="http://en.wikipedia.org/wiki/Special:Randompage" class="title" target="_blank">{{ prezi.fields.data.title }}</a>
 
                   <ul class="meta meta-last">
-                    <li><a v-bind:href="prezi.creator['profileUrl']" target="_blank"><i class="fa fa-user"></i> {{ prezi.creator['name'] }}</a></li>
+                    <li><a v-bind:href="prezi.fields.data.creator['profileUrl']" target="_blank"><i class="fa fa-user"></i> {{ prezi.fields.data.creator['name'] }}</a></li>
                   </ul>
                 </div>
               </div>
@@ -35,6 +52,21 @@
   $indigo: #5C6BC0;
   $blue: #29B6F6;
   $black: #717171;
+
+  section.title .info {
+    clear: both;
+    display: block;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    text-align: center;
+  }
+
+  section.title .form-control {
+    width:250px;
+    margin: 0 auto 0 auto;
+  }
 
   .card {
     width: 100%;
@@ -159,9 +191,11 @@
 </style>
 
 <script>
+import BuzzWords from 'buzzwords'
 export default {
   data () {
     return {
+      search: '',
       overlay: 'overlay',
       overlayBlue: 'overlay-blue',
       overlayIndigo: 'overlay-indigo'
@@ -176,9 +210,13 @@ export default {
         return false
       }
     },
-    randomImage: function () {
-      var randomIndex = Math.floor((Math.random() * 100) + 50)
+    randomIndex: function () {
+      var randomIndex = Math.floor((Math.random() * 1000) + 1)
       return randomIndex.toString()
+    },
+    buzzWord: function () {
+      var buzzWord = BuzzWords[Math.floor(Math.random() * BuzzWords.length)]
+      return buzzWord
     }
   }
 }
