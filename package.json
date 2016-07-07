@@ -17,8 +17,8 @@
   },
   "dependencies": {
     "bootstrap-sass": "^3.3.6",
+    "buzzwords": "^1.0.1",
     "contentful": "^3.3.5",
-    "contentful-management": "^1.1.6",
     "es6-promise": "^3.1.2",
     "serve-static": "^1.11.1",
     "vue": "^1.0.17",
