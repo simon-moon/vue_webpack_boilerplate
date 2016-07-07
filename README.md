@@ -4,7 +4,7 @@
 
 > The client application uses my prefered javascript framework [Vue.js](http://vuejs.org/guide/).  Vue itself is very lean and my project boilerplate uses webpack to further compress and optimize the js package. 
 
-> I took some liberties with the data for the sake of awesome.  I replaced the thumbnail source with thumbnails from [Unsplash It](https://unsplash.it/) as they deliver much faster.  I replaced the non-working links to the random Prezi profiles with links to [Random User Generator](https://randomuser.me/), and the entry titles link to a random wikipedia article for further enjoyment.  Oh and I used [BuzzWords](https://github.com/wooorm/buzzwords) for random bleeding-edge-of-reality tags.
+> I took some liberties with the data for the sake of awesome.  I replaced the thumbnail source with thumbnails from [Unsplash It](https://unsplash.it/) as they deliver much faster.  I replaced the non-working Prezi profiles with links to [Random User Generator](https://randomuser.me/). Also the entry titles link to a random wikipedia article for further enjoyment.  Oh and I used [BuzzWords](https://github.com/wooorm/buzzwords) for random bleeding-edge-of-reality tags.
 
 > Putting this together was a lot of fun, and if I had more time I would have implemented a few more features: 
 - Integrate the [Contentful-Management SDK](https://www.npmjs.com/package/contentful-management) to enable users to add, update or delete an entry;  
