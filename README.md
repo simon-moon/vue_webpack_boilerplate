@@ -1,10 +1,20 @@
 # A Demo Application for Prezi
 
-## App currently running [Heroku](https://preziapp.herokuapp.com/)
+### About
 
-> This application is based on my private  boilerplate for large scaleable applications in Vue.js. It comes bundled with vue-router and vue-loader for Webpack. Some features include: Babel 6 transpiler for es6; hot-reload; ESlint on-save; Test suite with Karma/Mocha/Jasmine featuring e2e testing via Nightwatch and in-browser testing with PhantomJS; bootstrap-sass (Bootstrap 3) CSS framewor; Integrated with the Contentful CMS SDK for rapid prototyping via cloud CMS; Express.js development server for local work and a simple distribution Server for Heroku. 
+> The demo application I have prepared showcases some of my favorite tools and application architectures.  I enjoy writing "serverless" applications that run on the client and consume data from cloud APIs. To that end I put this demo together using a headless CMS called Contentful as a backend.  The client application uses my prefered javascript framework [Vue.js](http://vuejs.org/guide/).  Vue itself is very lean and my project boilerplate uses webpack to compress the js package. 
 
-## Build Setup
+> Putting this together was a lot of fun, and if I had more time I would have implemented a few more things: Integrate the [Contentful-Management SDK](https://www.npmjs.com/package/contentful-management) to enable user to add, update or delete an entry;  Pagination!; Filter by slug - I added in a superficial(ui-only) attribute to replicate a subject tag if I had time I would have made it work with the filtering 
+
+> This application is based on my boilerplate for large scaleable applications in Vue.js. It comes bundled with vue-router and vue-loader for Webpack. Some features include: Babel 6 transpiler for es6; hot-reload; ESlint on-save; Test suite with Karma/Mocha/Jasmine featuring e2e testing via Nightwatch and in-browser testing with PhantomJS; bootstrap-sass (Bootstrap 3) CSS framewor; Integrated with the Contentful CMS SDK for rapid prototyping via cloud CMS; Express.js development server for local work and a simple distribution Server for Heroku. 
+
+## Checkout the APP
+
+> The app currently running on [Heroku](https://preziapp.herokuapp.com/).  If the drone is a sleep you may have to poke him to wake him up
+
+> I have invited Emoke as a user in Contentful to view the "backend".  Pester her for access or pester me with your email and I will add you.
+
+## Development Setup
 
 ``` bash
 # install dependencies
@@ -12,15 +22,6 @@ npm install
 
 # serve from Express server with hot reload at localhost:8080
 npm run dev
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 
 # build for production with minification
 npm run build
