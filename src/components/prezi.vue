@@ -22,7 +22,7 @@
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 moving-item">
           <div class="card" data-id="{{ prezi.fields.data.id }}">
             <div class="image">
-              <img v-bind:src="prezi.fields.data.thumbnail + '?image=' + randomIndex()" alt="" onerror="if (this.src != 'moon.jpg') this.src = './static/assets/images/moon.jpg';">
+              <img v-bind:src="prezi.fields.data.thumbnail + '?image=' + randomIndex()" alt="" onerror="if (this.src != './static/assets/images/moon.jpg') this.src = './static/assets/images/moon.jpg';">
 
               <div v-bind:class="[overlay, isEven($index) ? overlayBlue : overlayIndigo ]">
                 <div class="overlay-content">
