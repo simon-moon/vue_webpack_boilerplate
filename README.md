@@ -16,7 +16,7 @@
 
 ## View the Live App
 
-> The app currently running on [Heroku](https://preziapp.herokuapp.com/).  If the drone is asleep you may have to poke it a few times to wake it up.  Hitting refresh will randomize the tile images.
+> The app is currently running on [Heroku](https://preziapp.herokuapp.com/).  If the Heroku and Contentful drones are asleep you may have to poke it a few times to wake it up - they take naps when no one visits.  Hitting refresh will randomize the tile images.
 
 > I can invite read-only users into Contentful to view the "backend".  Pester me with your email and I will add you.
 
