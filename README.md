@@ -1,6 +1,4 @@
-# A Demo Application for Prezi
-
-## About
+# About This Demo
 
 > The demo application I have prepared showcases some of my favorite tools and toys.  I enjoy writing pure JS applications that run on the client and consume APIs for fun and profit. To that end I put this demo together using a headless CMS called Contentful as a backend.  Contentful is an easy to use Cloud CMS that enables rapid prototyping. It has a data-first developer-centric approach and a robust API.  
 
