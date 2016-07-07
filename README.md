@@ -14,13 +14,13 @@
 - Filter by tag - I added a ui element to replicate a subject tag and if I had more time I would have made it work with the filtering
 - Unit testing, cause you know...
 
-> This application is based on my boilerplate for large scaleable applications in Vue.js. It comes bundled with vue-router and vue-loader for Webpack. Some features include: Babel 6 transpiler for es6; hot-reload; ESlint on-save; Test suite with Karma/Mocha/Jasmine featuring e2e testing via Nightwatch and in-browser testing with PhantomJS; bootstrap-sass (Bootstrap 3) CSS framewor; Integrated with the Contentful CMS SDK for rapid prototyping via cloud CMS; Express.js development server for local work and a simple distribution Server for Heroku. 
+> This application is based on my boilerplate for large scaleable applications in Vue.js. It comes bundled with vue-router and vue-loader for Webpack. Some features include: Babel 6 transpiler for es6; hot-reload; ESlint on-save; Test suite with Karma/Mocha/Jasmine featuring e2e testing via Nightwatch and in-browser testing with PhantomJS; bootstrap-sass (Bootstrap 3) CSS framework; Integrated with the Contentful CMS SDK for rapid prototyping via cloud CMS; A development server for local work and a simple distribution Server for Heroku written in Express.js. 
 
 ## View the Live App
 
-> The app currently running on [Heroku](https://preziapp.herokuapp.com/).  If the drone is asleep you may have to poke it a few times to wake it up
+> The app currently running on [Heroku](https://preziapp.herokuapp.com/).  If the drone is asleep you may have to poke it a few times to wake it up.  Hitting refresh will randomize the tile images.
 
-> I have invited read-only users in Contentful to view the "backend".  Pester me with your email and I will add you.
+> I can invite read-only users into Contentful to view the "backend".  Pester me with your email and I will add you.
 
 ## Development Setup
 
