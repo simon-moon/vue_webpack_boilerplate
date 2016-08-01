@@ -1,6 +1,6 @@
 <template>
 
-  <prezis v-bind:prezis="layoutData.items.preziEntries">
+  <entries v-bind:entries="layoutData.items.preziEntries">
 
 </template>
 <style lang='scss'>
@@ -9,10 +9,10 @@
 
 <script>
   import Storage from '../storage.js'
-  import Prezis from '../components/prezi'
+  import Entries from '../components/entry'
   export default {
     components: {
-      Prezis
+      Entries
     },
     data () {
       return {
@@ -22,8 +22,8 @@
       }
     },
     created () {
-      const preziCollectionID = this.$route.props.preziCollectionID
-      const fetchData = Storage.getEntry(preziCollectionID, 1)
+      const entryCollectionID = this.$route.props.entryCollectionID
+      const fetchData = Storage.getEntry(entryCollectionID, 1)
       fetchData
       .then((results) => {
         this.layoutData.items = results.items

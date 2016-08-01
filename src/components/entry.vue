@@ -4,10 +4,10 @@
     <div class="container">
       <div class="row">
         <div class="info col-md-12">
-          <p>A Prezi Demo</p>
+          <p>A Vue Demo</p>
           <p>Lovingly Made by <a target="_blank" href="https://codepen.io/simonmoon/">Simon Moon</a>.</p>
             <div class="col-md-12 text-center">
-              <p>Search Prezis By Author, Title or Date!</p>
+              <p>Search Entries By Author, Title or Date!</p>
               <input v-model="search" class="form-control" placeholder="Start Typing">
             </div>  
         </div>
@@ -15,26 +15,26 @@
     </div>
   </section>
 
-  <section class="prezis">
+  <section class="entries ">
     <div class="container">
 
-      <template v-for="prezi in prezis| filterBy search">
+      <template v-for="entry in entries | filterBy search">
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 moving-item">
-          <div class="card" data-id="{{ prezi.fields.data.id }}">
+          <div class="card" data-id="{{ entry.fields.data.id }}">
             <div class="image">
-              <img v-bind:src="prezi.fields.data.thumbnail + '?image=' + randomIndex()" alt="" onerror="if (this.src != './static/assets/images/moon.jpg') this.src = './static/assets/images/moon.jpg';">
+              <img v-bind:src="entry.fields.data.thumbnail + '?image=' + randomIndex()" alt="" onerror="if (this.src != './static/assets/images/moon.jpg') this.src = './static/assets/images/moon.jpg';">
 
               <div v-bind:class="[overlay, isEven($index) ? overlayBlue : overlayIndigo ]">
                 <div class="overlay-content">
                   <ul class="meta">
                     <li><i class="fa fa-tag"></i> {{buzzWord()}}</li>
-                    <li><i class="fa fa-clock-o"></i> {{ prezi.fields.data.createdAt }} </li>
+                    <li><i class="fa fa-clock-o"></i> {{ entry.fields.data.createdAt }} </li>
                   </ul>
 
-                  <a href="http://en.wikipedia.org/wiki/Special:Randompage" class="title" target="_blank">{{ prezi.fields.data.title }}</a>
+                  <a href="http://en.wikipedia.org/wiki/Special:Randompage" class="title" target="_blank">{{ entry.fields.data.title }}</a>
 
                   <ul class="meta meta-last">
-                    <li><a v-bind:href="prezi.fields.data.creator['profileUrl']" target="_blank"><i class="fa fa-user"></i> {{ prezi.fields.data.creator['name'] }}</a></li>
+                    <li><a v-bind:href="entry.fields.data.creator['profileUrl']" target="_blank"><i class="fa fa-user"></i> {{ entry.fields.data.creator['name'] }}</a></li>
                   </ul>
                 </div>
               </div>
@@ -201,7 +201,7 @@ export default {
       overlayIndigo: 'overlay-indigo'
     }
   },
-  props: ['prezis'],
+  props: ['entries'],
   methods: {
     isEven: function (entryIndex) {
       if (entryIndex % 2 === 0) {

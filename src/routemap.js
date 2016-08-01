@@ -4,7 +4,7 @@ export default {
       require(['./layouts/Home'], resolve)
     },
     props: {
-      preziCollectionID: '34mEcsdMoUUEeOMW8Q6aCs'
+      entryCollectionID: '34mEcsdMoUUEeOMW8Q6aCs'
     }
   },
   '/home': {
@@ -12,7 +12,7 @@ export default {
       require(['./layouts/Home'], resolve)
     },
     props: {
-      preziCollectionID: '34mEcsdMoUUEeOMW8Q6aCs'
+      entryCollectionID: '34mEcsdMoUUEeOMW8Q6aCs'
     }
   }
 }
