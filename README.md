@@ -1,16 +1,8 @@
 # About This Demo
 
-> The demo application I have prepared showcases some of my favorite tools and toys.  I enjoy writing pure JS applications that run on the client and consume APIs for fun and profit. To that end I put this demo together using a headless CMS called Contentful as a backend.  Contentful is an easy to use Cloud CMS that enables rapid prototyping. It has a data-first developer-centric approach and a robust API (inspect the page source, it's tiny!).  
 
 > The client application uses my prefered javascript framework [Vue.js](http://vuejs.org/guide/).  Vue itself is very lean and my project boilerplate uses webpack to further compress and optimize the js package. 
 
-> I took some liberties with the data for the sake of awesome.  I replaced the thumbnail source with thumbnails from [Unsplash It](https://unsplash.it/) as they deliver much faster.  I replaced the non-working Prezi profiles with links to [Random User Generator](https://randomuser.me/). Also the entry titles link to a random wikipedia article for further enjoyment.  Oh and I used [BuzzWords](https://github.com/wooorm/buzzwords) for random bleeding-edge-of-reality tags.
-
-> Putting this together was a lot of fun, and if I had more time I would have implemented a few more features: 
-- Integrate the [Contentful-Management SDK](https://www.npmjs.com/package/contentful-management) to enable users to add, update or delete an entry;  
-- Pagination; 
-- Filter by tag - I added a ui element to replicate a subject tag and if I had more time I would have made it work with the filtering
-- Unit tests, cause you know... mumble...mumble...darkside of the force.
 
 > This application is based on my boilerplate for large scaleable applications in Vue.js. It comes bundled with vue-router and vue-loader for Webpack. Some features include: Babel 6 transpiler for es6; hot-reload; ESlint on-save; Test suite with Karma/Mocha/Jasmine featuring e2e testing via Nightwatch and in-browser testing with PhantomJS; bootstrap-sass (Bootstrap 3) CSS framework; Integrated with the Contentful CMS SDK for rapid prototyping via cloud CMS; A development server for local work and a simple distribution Server for Heroku written in Express.js. 
 
@@ -18,7 +10,6 @@
 
 > The app is currently running on [Heroku](https://preziapp.herokuapp.com/).  If the Heroku and Contentful drones are asleep you may have to poke it a few times to wake it up - they take naps when no one visits.  Hitting refresh will randomize the tile images.
 
-> I can invite read-only users into Contentful to view the "backend".  Pester me with your email and I will add you.
 
 ### Development Setup
 
