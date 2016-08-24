@@ -8,7 +8,7 @@
 
 ## View the Live App
 
-> The app is currently running on [Heroku](https://preziapp.herokuapp.com/).  If the Heroku and Contentful drones are asleep you may have to poke it a few times to wake it up - they take naps when no one visits.  Hitting refresh will randomize the tile images.
+> The app is currently running on [Heroku](https://vuedemoapp.herokuapp.com/).  If the Heroku and Contentful drones are asleep you may have to poke it a few times to wake it up - they take naps when no one visits.  Hitting refresh will randomize the tile images.
 
 
 ### Development Setup
